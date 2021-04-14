@@ -1,0 +1,492 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.upper {
+  z-index: 1;
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+  position: absolute;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#icon-con a {
+  width: 10vh;
+  position: relative;
+  left: 38vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2vh;
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+}
+
+#con1 {
+  margin-top: 0.5vh;
+  margin-left: 0.5vh;
+  font-size: 3vh;
+}
+
+#upper2 {
+  position: relative;
+  left: 50%;
+  font-size: 1.5vh;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#upper2 div {
+  margin-right: 4vh;
+  cursor: default;
+}
+
+#upper2 div a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#upper2 div a:hover {
+  color: #1DB954;
+}
+
+.middle1 {
+  position: absolute;
+  background-color: #2d46b9;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.middle1:before {
+  content: "";
+  position: absolute;
+  width: 120rem;
+  height: 120rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#293d98), to(#1f2f75));
+  background: linear-gradient(to bottom, #293d98, #1f2f75);
+  top: 40%;
+  left: 42%;
+}
+
+.middle1:after {
+  content: "";
+  position: absolute;
+  width: 120rem;
+  height: 120rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#293d98), to(#1f2f75));
+  background: linear-gradient(to bottom, #293d98, #1f2f75);
+  width: 70rem;
+  height: 70rem;
+  left: -7%;
+  top: 0%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#293d98), to(#293d98));
+  background: linear-gradient(#293d98, #293d98);
+}
+
+.middle1 #color {
+  width: 20rem;
+  height: 20rem;
+  background-color: #293d98;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 34%;
+}
+
+.middle1 #conm1 {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.middle1 #conm2 {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  height: 3rem;
+  top: 50%;
+  left: 32%;
+}
+
+.middle1 #conm2 i {
+  font-size: 1.7rem;
+  width: 4.7rem;
+  height: 4.7rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -0.5rem;
+  color: rgba(0, 0, 0, 0.151);
+}
+
+.middle1 #conm2 input {
+  width: 60rem;
+  height: 5rem;
+  border: 0rem;
+  border-radius: 0.3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem -0.5rem white;
+          box-shadow: 0.1rem 0.1rem 1rem -0.5rem white;
+}
+
+.middle1 #conm2 input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.middle1 #conm2 input:-ms-input-placeholder {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.middle1 #conm2 input::-ms-input-placeholder {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.middle1 #conm2 input::placeholder {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.middle1 #conm3 {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  color: white;
+  top: 75%;
+  left: 25%;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+.middle1 #conm3 #conm4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle1 #conm3 #conm5 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 24rem;
+  font-size: 1.1rem;
+}
+
+.middle1 #conm3 #conm5 div {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.middle1 #conm3 #conm5 div a {
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.middle1 #conm3 #conm5 #conm6 {
+  margin-left: -4rem;
+}
+
+.middle1 #conm3 #conm5 #conm7 {
+  margin-left: -2rem;
+}
+
+.middle2 {
+  background-color: #eee;
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  top: 50%;
+  color: black;
+}
+
+.middle2 #conmo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  position: absolute;
+  left: 27%;
+  top: 10%;
+}
+
+.middle2 #conmo2 {
+  margin-right: 14rem;
+}
+
+.middle2 #conmo2 div:nth-child(1) {
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.middle2 #conmo2 div {
+  margin-bottom: 1.5rem;
+}
+
+.middle2 #conmo2 div a {
+  color: #2d46b9;
+  text-decoration: none;
+}
+
+.middle2 #conmo2 div a:hover {
+  color: #26336e;
+}
+
+.middle3 {
+  position: absolute;
+  top: 90%;
+  background-color: #fff;
+  width: 100%;
+  height: 35vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.middle3 #conmop1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.middle3 #conmop2 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.middle3 #conmop2::after {
+  content: "Community of expert fans!";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.middle3 #conmop3 {
+  margin-top: 5rem;
+  border-radius: 2rem;
+  border: 0rem;
+  background-color: #2d46b9;
+}
+
+.middle3 #conmop3 a {
+  border-radius: 2rem;
+  background-color: #2d46b9;
+  width: 20rem;
+  height: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.middle3 #conmop3 a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-animation: size linear;
+          animation: size linear;
+}
+
+.lower {
+  position: absolute;
+  top: 127%;
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+}
+
+#icon2-con2 a {
+  width: 10vh;
+  position: relative;
+  left: 38vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12vh;
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+}
+
+#con2 {
+  margin-top: 0.5vh;
+  margin-left: 0.5vh;
+  font-size: 3vh;
+}
+
+#con5, #con6, #con7, #con8, #con9, #con10 {
+  position: absolute;
+  top: 30%;
+}
+
+#con5 div, #con6 div, #con7 div, #con8 div, #con9 div, #con10 div {
+  color: white;
+  font-size: 1.5vh;
+}
+
+#con5 div a, #con6 div a, #con7 div a, #con8 div a, #con9 div a, #con10 div a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vh;
+  cursor: pointer;
+}
+
+#con5 div a:hover, #con6 div a:hover, #con7 div a:hover, #con8 div a:hover, #con9 div a:hover, #con10 div a:hover {
+  color: #1DB954;
+  opacity: 1;
+}
+
+#con5 div, #con6 div, #con7 div, #con8 div, #con9 div {
+  position: relative;
+  margin-bottom: 3.0vh;
+}
+
+#con5 {
+  left: 30%;
+  top: 25%;
+}
+
+#con5 div:nth-child(1), #con6 div:nth-child(1), #con7 div:nth-child(1) {
+  opacity: 0.5;
+}
+
+#con6 {
+  left: 40%;
+  top: 25%;
+}
+
+#con7 {
+  left: 50%;
+  top: 25%;
+}
+
+#con8 {
+  top: 25%;
+  left: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#con9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 90%;
+  left: 20%;
+  opacity: 0.5;
+}
+
+#con9 div:nth-child(6) {
+  left: 125%;
+  font-size: 1.2vh;
+}
+
+#con10 {
+  left: 75.5%;
+  top: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#con10 img {
+  width: 2.5vh;
+  margin-left: 0.5vh;
+}
+
+#con8 div {
+  width: 5.0vh;
+  height: 5.0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #222326;
+  margin-right: 1.5vh;
+}
+
+#con8 div i {
+  font-size: 2.5vh;
+}
+
+#con9 div {
+  margin-right: 2vh;
+}
+
+#con9 div a {
+  font-size: 1.3vh;
+}
+/*# sourceMappingURL=Support.css.map */

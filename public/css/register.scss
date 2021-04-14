@@ -1,0 +1,125 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  display:grid;
+  place-items: center;
+  min-height: 100vh;
+  font-size:1.2em;
+}
+
+.center{
+    .top{
+        font-weight:bold;
+        width:35rem;
+        display:grid;
+        margin-top:2em;
+        .top1{
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:2em;
+        }
+        .top2{
+            width:100%;
+            display:flex;
+            justify-content: center;
+            margin-top:1em;
+            margin-bottom:0.7em;
+            font-weight: bold;
+            font-size:1.6em;
+        }
+        .top3{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            button{ 
+            width:100%;
+            border-radius: 1.5em;
+            border:0px;
+            padding:0.8em;
+            color:white;
+            background-color:rgb(58, 88, 151);
+            font-size:0.8em;
+            cursor: pointer; 
+                &:hover{
+                    transform: scale(1.1);
+                    opacity: 0.7;
+                }
+            }
+        }
+        .top4{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            margin-top:1em;
+            span{
+                opacity: 0.5;
+                display:flex;
+                align-items:center;
+                &::before,&::after{
+                    content:"";
+                    position:absolute;
+                    width:10em;
+                    height:1px;
+                    background-color: black;
+                    opacity: 0.3;
+                    margin-left:1.5em;
+                }
+                &::before{
+                    margin-left: -10.5em;;
+                }
+
+            }
+        }
+    }
+
+
+
+  width:30rem;
+  min-height:80vh;
+  display:grid;
+  place-items: center;
+  form{
+      width:100%;
+      min-height:100%;
+      display:grid;
+      div{
+          margin-top: 2em;
+          font-weight: bold;
+      }
+      label{
+          div{
+              display: none;
+          }
+      }
+      label.label1{
+          display: grid;
+          font-weight: bold;
+          margin-top: 2em;
+          a{
+              color:rgb(0, 207, 0);
+              font-weight: 100 !important;
+          }
+          input,select {
+              border:1px solid rgba(0, 0, 0, 0.349);
+              border-radius: 0.3em;
+              padding-left:1em;
+              height: 3em;
+          }
+      }
+      label.label2{
+          display: flex;
+          margin-top: 2em;
+      }
+      label.label3{
+          margin-top: -1em;
+      }
+      label.label4{
+          margin-top: 4rem;
+      }
+  }
+}

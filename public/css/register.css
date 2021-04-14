@@ -1,0 +1,171 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-size: 1.2em;
+}
+
+.center {
+  width: 30rem;
+  min-height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center .top {
+  font-weight: bold;
+  width: 35rem;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.center .top .top1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+.center .top .top2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.center .top .top3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .top .top3 button {
+  width: 100%;
+  border-radius: 1.5em;
+  border: 0px;
+  padding: 0.8em;
+  color: white;
+  background-color: #3a5897;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.center .top .top3 button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.center .top .top4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.center .top .top4 span {
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .top .top4 span::before, .center .top .top4 span::after {
+  content: "";
+  position: absolute;
+  width: 10em;
+  height: 1px;
+  background-color: black;
+  opacity: 0.3;
+  margin-left: 1.5em;
+}
+
+.center .top .top4 span::before {
+  margin-left: -10.5em;
+}
+
+.center form {
+  width: 100%;
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.center form div {
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.center form label div {
+  display: none;
+}
+
+.center form label.label1 {
+  display: -ms-grid;
+  display: grid;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.center form label.label1 a {
+  color: #00cf00;
+  font-weight: 100 !important;
+}
+
+.center form label.label1 input, .center form label.label1 select {
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  border-radius: 0.3em;
+  padding-left: 1em;
+  height: 3em;
+}
+
+.center form label.label2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.center form label.label3 {
+  margin-top: -1em;
+}
+
+.center form label.label4 {
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=register.css.map */

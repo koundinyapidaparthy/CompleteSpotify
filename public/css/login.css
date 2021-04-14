@@ -1,0 +1,61 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.center {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 20rem;
+  height: 20rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.327)));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.327));
+  -webkit-box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(0, 0, 0, 0.253);
+          box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(0, 0, 0, 0.253);
+  border-radius: 1.5rem;
+}
+
+.center form {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center form input {
+  margin-bottom: 2rem;
+  min-height: 1.5rem;
+  border-radius: 0.2rem;
+  padding-left: 1rem;
+  border: 0px;
+}
+
+.center form input:focus {
+  outline: 0;
+}
+
+.center form button {
+  width: 11.5rem;
+  min-height: 1.5rem;
+  color: white;
+  background-color: #00e1ff;
+  font-weight: bold;
+  border: 0px;
+}
+
+.center form a {
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.center form a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+
+   <div class="center">
+           <div class="top">
+                <div class="top1"><i class="fa fa-spotify" aria-hidden="true"></i>
+               <span id="con1">Spotify</span></a></div>
+               <div class="top2">Sign up for free to start listening.</div>
+               <div class="top3"><button >SIGN UP WITH FACEBOOK</button></div>
+               <div class="top4"><span>or</span></div>
+          </div>
+    <form action="/details" method="post">
+        <label class="label1 label3 label4">what's your email?
+            <input  type="email" name="email" id="email" placeholder="Enter your email." />
+            <div class="red1"></div>
+            <a href="">use phone number instead.</a>
+        </label class="label1">
+        <label class="label1">Confirm your email
+            <input  type="email" name="verfiyemail" id="verfiyemail" placeholder="Enter your email." />
+            <div class="red2"></div>
+        </label >
+        <label class="label1">Create a Password
+            <input  type="password" name="password" id="password" placeholder="Create a  password." />
+            <div class="red3"></div>
+        </label>
+        <label class="label1">What should we call you?
+            <input  type="text" name="textname" id="textname" placeholder="Enter a profile name." />
+            <div class="red4"></div>
+            This appears on your profile.
+        </label>
+        <div>What's your date of birth?</div>
+        <label class="label2">
+                <label class="label1 label3">year
+                     <input type="text" placeholder="YYYY" name="year" maxlength="4"/>
+                    </label>
+                <label class="label1 label3">Month
+                     <select default="month" name="month" placeholder="Month">
+                    <option value="month">month</option>
+                    <option value="january">january</option>
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                    <option value="may">may</option>
+                    <option value="june">june</option>
+                    <option value="july">july</option>
+                    <option value="august">august</option>
+                    <option value="september">september</option>
+                    <option value="october">october</option>
+                    <option value="november">november</option>
+                    <option value="december">december</option>
+                </select>
+            </label>
+                <label class="label1 label3">Day
+                    <input type="text" name="day" placeholder="DD" maxlength="2">
+                </label>
+                <div class="red5"></div>
+                <div class="red6"></div>
+                <div class="red7"></div>
+            </label>
+            <div>What's your gender?</div>
+                <label class="label2">
+                    <input type="radio" value="Male" name="genderM" />Male
+                    <input type="radio" value="Female" name="genderF"/>Female
+                    <input type="radio" value="Others" name="genderO"/>Others
+                    <div class="red8"></div>
+                </label>
+                <label class="label2">
+                    <input type="checkbox" name="Checkbox" >
+                        Share my registration data with Spotify's content providers for marketing purposes 
+                </label>
+                <label class="label1">
+                    <input type="submit" value="Sign Up">
+                </label>
+        </form>
+   </div>
+</body>
+</html>

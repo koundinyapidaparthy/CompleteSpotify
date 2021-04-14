@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+$specificolor:#1DB954;
+$specificolor1:#2d46b9;
+$specificolor2:#1ed760;
+@mixin flexprop{
+    display: flex;
+    justify-content: center;
+}
+@mixin gridprop {
+    display: grid;
+    place-items: center;
+}
+body{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.upper{
+    z-index: 1;
+    width:100%;
+    height: 8vh;
+    background-color: black;
+    position: absolute;
+    color: white;
+    display: flex;
+}
+#icon-con a{
+    width:10vh;
+    position: relative;
+    left:38vh;
+    @include flexprop;
+    margin-top: 2vh;
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+}
+#con1{
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+    font-size: 3vh;
+}
+#upper2{
+    position: relative;
+    left:50%;
+    font-size: 1.5vh;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    @include flexprop;
+    align-items: center;
+    
+    div{
+        margin-right: 4vh;
+        cursor:default ;
+        a{
+            color:white;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                color:$specificolor;
+            }
+        }
+    }
+}
+
+//middle part
+
+//middle part1
+@mixin be-af {
+    content: "";
+    position: absolute;
+    width:120rem;
+    height: 120rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,#293d98,#1f2f75);
+}
+.middle1{
+    position: absolute;
+    background-color: $specificolor1;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    &:before{
+        @include be-af;
+        top:40%;
+        left:42%;
+    }
+    &:after{
+        @include be-af;
+        width: 70rem;
+        height: 70rem;
+        left: -7%;
+        top: 0%;
+        background: linear-gradient(#293d98 ,#293d98 );
+    }
+    @mixin  con {
+        z-index: 2;
+        position: absolute;
+        top:30%;
+        left:35%;
+        color:white;
+    }
+    #color{
+        width:20rem;
+        height:20rem;
+        background-color:#293d98;
+        position: absolute;
+        border-radius: 50%;
+        top:50%;
+        left:34%;
+    }
+    #conm1{
+        @include con;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    #conm2{
+        @include con;
+        @include flexprop;
+        position: absolute; 
+        height: 3rem;
+        top:50%;
+        left:32%;
+        i{
+            font-size: 1.7rem;
+            width:4.7rem;
+            height: 4.7rem;
+            @include gridprop;
+            position: absolute;
+            left: -0.5rem;
+            color: rgba(0, 0, 0, 0.151);
+        }
+        input{
+            width:60rem;
+            height: 5rem;
+            border: 0rem;
+            border-radius: 0.3rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            box-shadow: 0.1rem 0.1rem 1rem -0.5rem white;
+            &::placeholder{
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                
+            }
+
+        }
+
+    }
+    #conm3{
+        @include con;
+        top:75%;
+        left:25%;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        #conm4{
+            display: flex;
+        }
+        
+        #conm5{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width:24rem;
+            font-size: 1.1rem;
+            div{
+                color: rgba(255, 255, 255, 0.7);
+            }
+            div a{
+                position: absolute;
+                margin-left: -2rem;
+                margin-top: 2rem;
+                color: white;
+                text-decoration: none;
+                font-size:1.8rem;
+            }
+        
+            #conm6{
+                margin-left: -4rem;
+            }
+            #conm7{
+                margin-left: -2rem;
+            }
+        }
+        
+        
+    }
+}
+// 
+
+// middle plart 2
+.middle2{
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top:50%;
+    color:black;
+
+    #conmo1{
+        display: flex;
+        font-size: 2rem;
+        position: absolute;
+        left: 27%;
+        top:10%;
+    }
+    #conmo2{
+        margin-right: 14rem;
+        & div:nth-child(1){
+            margin-bottom: 3rem;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            font-weight: 600
+        }
+        & div 
+        {
+            margin-bottom: 1.5rem;
+            a{
+            color: #2d46b9;
+            text-decoration: none;
+            &:hover{
+                color:#26336e;
+            }
+            }
+        }
+    }
+
+
+}
+
+// 
+
+// middle part 3
+.middle3{
+    position: absolute;
+    top:90%;
+    background-color: #fff;
+    width: 100%;
+    height: 35vh;
+    @include gridprop;
+    align-content: center;
+    #conmop1{
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+    #conmop2{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+        &::after{
+            content: "Community of expert fans!";
+            position: absolute;
+            top:50%;
+            left:45%;
+        }
+    }
+    #conmop3 {
+        margin-top: 5rem;
+        border-radius: 2rem;
+        border: 0rem;
+        background-color: #2d46b9;
+        a{
+            border-radius: 2rem;
+            background-color: #2d46b9;
+            width: 20rem;
+            height: 4rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;  
+            color: white;
+            text-decoration: none;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+                animation: size linear;
+            }
+        }
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lower{
+    position: absolute;
+    top:127%;
+    width:100%;
+    height: 60vh;
+    background-color: black;
+}
+#icon2-con2 a{
+    width:10vh;
+    position: relative;
+    left:38vh;
+    @include flexprop;
+    margin-top: 12vh;
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+}
+#con2{
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+    font-size: 3vh;
+}
+@mixin con1 {
+    div{
+        color:white;
+        font-size: 1.5vh;
+        a{
+            color:white;
+            text-decoration: none;
+            font-size: 1.5vh;
+            cursor: pointer;
+            &:hover{
+                color:$specificolor;
+                opacity: 1;
+            }
+        }
+    }
+}
+#con5 ,#con6 ,#con7 ,#con8,#con9,#con10 {
+    position: absolute;
+    top:30%;
+    @include con1;
+}
+#con5 div,#con6 div,#con7 div,#con8 div,#con9 div{
+    position: relative;
+    margin-bottom: 3.0vh;
+}
+#con5{
+    left:30%;
+    top:25%;
+}
+#con5 div:nth-child(1),#con6 div:nth-child(1),#con7 div:nth-child(1){
+    opacity: 0.5;
+}
+#con6{
+    left:40%;
+    top:25%;
+}
+#con7{
+    left:50%;
+    top:25%;
+}
+#con8{
+    top: 25%;
+    left:70%;
+    display: flex;
+}
+#con9{
+    display: flex;
+    top: 90%;
+    left:20%;
+    opacity: 0.5;
+}
+#con9 div:nth-child(6){
+    left:125%;
+    font-size: 1.2vh;
+}
+#con10{
+    left: 75.5%;
+    top:86%;
+    display: flex;
+}
+#con10 img{
+    width:2.5vh;
+    margin-left: 0.5vh;
+}
+#con8 div{
+    width: 5.0vh;
+    height: 5.0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#222326 ;
+    margin-right: 1.5vh;
+}
+#con8 div i{
+    font-size: 2.5vh;
+}
+
+#con9 div{
+    margin-right: 2vh;
+    a{
+        font-size: 1.3vh;
+    }
+}
